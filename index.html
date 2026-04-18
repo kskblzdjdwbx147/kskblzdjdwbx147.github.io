@@ -2,29 +2,64 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的第一个网站</title>
+    <title>我的个人网站</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: "Microsoft YaHei", sans-serif;
-            background-color: #e6f2ff;
+            background: linear-gradient(135deg, #74b9ff, #0984e3);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
             text-align: center;
-            padding-top: 100px;
-            margin: 0;
         }
+
+        .box {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 50px 30px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+        }
+
         h1 {
-            color: #2c3e50;
-            font-size: 36px;
+            font-size: 40px;
+            margin-bottom: 20px;
         }
+
         p {
-            color: #34495e;
-            font-size: 18px;
-            margin-top: 20px;
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            background: white;
+            color: #0984e3;
+            padding: 12px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background: #f1f1f1;
         }
     </style>
 </head>
 <body>
-    <h1>🎉 欢迎来到我的专属小站！</h1>
-    <p>这里是我的第一个网站，以后会慢慢更新更多内容~</p>
+    <div class="box">
+        <h1>🎉 我的个人网站</h1>
+        <p>这是我用 GitHub Pages 免费搭建的网站</p>
+        <a class="btn" href="#">点我试试</a>
+    </div>
 </body>
 </html>
